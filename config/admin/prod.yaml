@@ -1,0 +1,4 @@
+env: "prod"
+version: "1.0.0"
+db_connect: "root:password@tcp(host.docker.internal:3306)/myblog"
+port: 8086
