@@ -18,7 +18,7 @@ type Saver interface {
 
 type Provider interface {
 	GetBlogEntries() ([]*models.BlogEntry, error)
-	GetBlogEntry(id int64) (*models.BlogEntry, error)
+	GetBlogEntry(id string) (*models.BlogEntry, error)
 }
 
 func New(log *slog.Logger, blogSaver Saver, blogProvider Provider) *Entry {
